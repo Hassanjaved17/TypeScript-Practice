@@ -2,7 +2,7 @@
 // string, nunber, boolean
 
 // Explicit Type
-// explicit type is when you explicitly declare the type of a variable using type annotations
+// explicit type is when you explicitly declare the type of a variable using type annotations (The best practice is to use explicit types for better code readability and maintainability)
 // var userName: string = "hassan";
 // var age: number = 30;
 // var isMarried: boolean = false;
@@ -23,4 +23,5 @@ console.log("User Name: " + userName + ", Age: " + age + ", Is Married: " + isMa
 
 // special types (any)
 // any type can hold any value and bypasses type checking
+ 
 

@@ -23,6 +23,11 @@ console.log("User Name: " + userName + ", Age: " + age + ", Is Married: " + isMa
 
 // special types (any)
 // any type can hold any value and bypasses type checking
+ var username: any = "hassan"; // Initially a string
+ console.log("Username (string): " + username);
+ username = 10;
+ console.log("Username (number): " + username);
+ username = true;
+ console.log("Username (boolean): " + username);
  
 
-    

@@ -1,31 +1,25 @@
-var stdName: string = "John Doe";
-var stdAge: number = 25;
-var isStudent: boolean = true;
+"use strict";
+var stdName = "John Doe";
+var stdAge = 25;
+var isStudent = true;
 console.log("Student Name: " + stdName + ", Age: " + stdAge + ", Is Student: " + isStudent);
-
-function greet(name: string): string {
+function greet(name) {
     return "Hello, " + name + "!";
 }
 console.log(greet("Alice"));
-
 var userName = "hassan";
 var age = 20;
 var isMarried = false;
 console.log("User Name: " + userName + ", Age: " + age + ", Is Married: " + isMarried);
-var username
-: any = "hassan";
+var username = "hassan";
 console.log("Username (string): " + username);
 username = 10;
 console.log("Username (number): " + username);
 username = true;
 console.log("Username (boolean): " + username);
-var person: [string, number] = ["hassan", 20];
+var person = ["hassan", 20];
 console.log("Name: " + person[0] + ", Age: " + person[1]);
-var student: {
-    name: string;
-    age: number;
-    isMarried: boolean;
-} = {
+var student = {
     name: "hassan",
     age: 20,
     isMarried: false

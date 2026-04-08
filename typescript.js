@@ -33,3 +33,11 @@ var person = ["hassan", 20]; // Tuple with a string and a number
 console.log("Name: " + person[0] + ", Age: " + person[1]);
 // enum type
 // An enum (short for "enumeration") is a way to define a set of named constants. It allows you to create a collection of related values that can be used in a more readable and maintainable way.
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue"; // 2
+})(Color || (Color = {}));
+var favoriteColor = Color.Green;
+console.log("Favorite Color: " + favoriteColor);

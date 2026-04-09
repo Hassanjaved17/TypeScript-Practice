@@ -44,10 +44,21 @@ console.log(uname); // This will cause an error because the tuple is defined to 
 // var favoriteColor: Color = Color.Green;
 // console.log("Favorite Color: " + favoriteColor);
 // enum (set specific keys and values to the constants)
+// there are two types of enums in TypeScript: numeric enums and string enums. Numeric enums assign numeric values to the constants, while string enums assign string values. By default, numeric enums start with 0 and increment by 1 for each subsequent constant, but you can also specify custom values for each constant.
+// Numeric Enum
 var obj;
 (function (obj) {
-    obj[obj["sname"] = 0] = "sname";
-    obj[obj["sage"] = 1] = "sage";
-    obj[obj["sid"] = 2] = "sid";
+    obj[obj["sname"] = 100] = "sname";
+    obj[obj["sage"] = 201] = "sage";
+    obj[obj["sid"] = 302] = "sid";
 })(obj || (obj = {}));
 console.log(obj);
+// String Enum
+var Color;
+(function (Color) {
+    Color["Red"] = "RED";
+    Color["Green"] = "GREEN";
+    Color["Blue"] = "BLUE";
+})(Color || (Color = {}));
+var favoriteColor = Color.Green;
+console.log("Favorite Color: " + favoriteColor);

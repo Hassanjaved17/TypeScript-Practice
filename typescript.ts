@@ -53,9 +53,21 @@ console.log(uname); // This will cause an error because the tuple is defined to 
 // console.log("Favorite Color: " + favoriteColor);
 
 // enum (set specific keys and values to the constants)
-enum obj {
-    sname,
-    sage,
-    sid
+// there are two types of enums in TypeScript: numeric enums and string enums. Numeric enums assign numeric values to the constants, while string enums assign string values. By default, numeric enums start with 0 and increment by 1 for each subsequent constant, but you can also specify custom values for each constant.
+// Numeric Enum
+enum obj {  
+    sname = 100,
+    sage = 201,
+    sid = 302
 }
 console.log(obj)
+
+// String Enum _ String enums allow you to assign string values to the constants, making the code more readable and easier to understand. Each constant in a string enum is assigned a unique string value, which can be used for better code clarity and maintainability.
+enum Color {
+    Red = "RED",
+    Green = "GREEN", 
+    Blue = "BLUE"
+}
+var favoriteColor: Color = Color.Green;
+console.log("Favorite Color: " + favoriteColor);
+ 

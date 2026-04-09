@@ -31,7 +31,7 @@
 //  console.log("Username (boolean): " + username);
 
 //  TypeScript Types (for objects)
-// tuple type (fixed-length array with different types, order is important and length is fixed)
+// tuple type (used mostly with arrays) (fixed-length array with different types, order is important and length is fixed)
 // A tuple is a fixed-length array where each element can have a different type. It allows you to group related values together and specify their types explicitly.
 
 var person: [string, number] = ["hassan", 20]; // Tuple with a string and a number
@@ -42,7 +42,7 @@ uname.push("Einstein"); // This will cause an error because the tuple is defined
 console.log(uname); // This will cause an error because the tuple is defined to have only two elements
 
 
-// enum type
+// enum type (mostly used with objects) (used to define a set of named constants, making code more readable and maintainable)
 // An enum (short for "enumeration") is a way to define a set of named constants. It allows you to create a collection of related values that can be used in a more readable and maintainable way.
 // enum Color {
 //     Red, // 0
@@ -52,3 +52,7 @@ console.log(uname); // This will cause an error because the tuple is defined to 
 // var favoriteColor: Color = Color.Green;
 // console.log("Favorite Color: " + favoriteColor);
 
+// enum (set specific keys and values to the constants)
+enum obj {
+    s
+}

@@ -44,3 +44,10 @@ console.log(uname); // This will cause an error because the tuple is defined to 
 // var favoriteColor: Color = Color.Green;
 // console.log("Favorite Color: " + favoriteColor);
 // enum (set specific keys and values to the constants)
+var obj;
+(function (obj) {
+    obj[obj["sname"] = 0] = "sname";
+    obj[obj["sage"] = 1] = "sage";
+    obj[obj["sid"] = 2] = "sid";
+})(obj || (obj = {}));
+console.log(obj);

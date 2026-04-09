@@ -54,5 +54,8 @@ console.log(uname); // This will cause an error because the tuple is defined to 
 
 // enum (set specific keys and values to the constants)
 enum obj {
-    s
+    sname,
+    sage,
+    sid
 }
+console.log(obj)
